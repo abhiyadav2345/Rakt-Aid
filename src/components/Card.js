@@ -3,14 +3,20 @@ import React from "react";
 export default function Card() {
   return (
     <>
-      <div className="card text-bg-primary mb-3" >
-        <div className="card-header">Header</div>
+      <div className="card border-card-block col-sm-3 mb-3 shadow p-3 mb-5 bg-white rounded">
+        <div className="card-header">
+          {" "}
+          <b>Blood Group:</b>
+        </div>
         <div className="card-body">
-          <h5 className="card-title">Primary card title</h5>
+          <h5 className="card-title card-primary">Name:</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <b>Contact details:</b>
           </p>
+          <p className="card-text">
+            <b>Address:</b>
+          </p>
+          <p className="card-text"> </p>
         </div>
       </div>
     </>

@@ -1,6 +1,32 @@
-import React from "react";
+import React  from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function SignIn() {
+
+  const [UserName, setUserName] = useState("");
+
+  const ChangehandleName = (event)=> {
+    // console.log(event.target.value);
+    setUserName(event.target.value)
+    
+  }
+  console.log(UserName)
+
+  const [password, setPassword] = useState("");
+
+  const ChangehandlePassword = (event)=> {
+    // console.log(event.target.value);
+    setPassword(event.target.value)
+    
+  }
+  console.log(UserName)
+  // const changeHandleName = (event)=> {
+  //   setUserCredential({
+  //     password: event.target.value,
+  //   })
+  // }
+
   return (
     <>
       <section className="vh-100">
@@ -19,23 +45,27 @@ export default function SignIn() {
                 {/*  Email input  */}
                 <div className="form-outline mb-4">
                   <input
+                    onChange={ChangehandleName}
+                    value={UserName}
                     type="email"
                     id="form3Example3"
                     className="form-control form-control-lg"
                     placeholder="Enter a valid email address"
                   />
-                  <label className="form-label" for="form3Example3"></label>
+                  <label className="form-label" htmlFor="form3Example3"></label>
                 </div>
 
                 {/*  Password input  */}
                 <div className="form-outline mb-3">
                   <input
+                    onChange={ChangehandlePassword}
+                    value={password}
                     type="password"
                     id="form3Example4"
                     className="form-control form-control-lg"
                     placeholder="Enter password"
                   />
-                  <label className="form-label" for="form3Example4"></label>
+                  <label className="form-label" htmlFor="form3Example4"></label>
                 </div>
 
                 <div className="d-flex justify-content-between align-items-center">
@@ -47,7 +77,7 @@ export default function SignIn() {
                       value=""
                       id="form2Example3"
                     />
-                    <label className="form-check-label" for="form2Example3">
+                    <label className="form-check-label" htmlFor="form2Example3">
                       Remember me
                     </label>
                   </div>
@@ -78,9 +108,9 @@ export default function SignIn() {
                   </button>
                   <p className="small fw-bold mt-2 pt-1 mb-0">
                     Don't have an account?{" "}
-                    <a href="/" className="link-danger">
+                    <Link to="/SignUp" className="link-danger">
                       Register
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </form>

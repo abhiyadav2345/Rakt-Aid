@@ -32,6 +32,14 @@ export default function SignUp() {
                     </div>
                   </div>
                   
+                  <div className="d-flex flex-row align-items-center mb-4">
+                    <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div className="form-outline flex-fill mb-0">
+                      <input type="email" id="form3Example3c" className="form-control" />
+                      <label className="form-label" htmlFor="form3Example3c">Contact Number </label>
+                    </div>
+                  </div>
+                  
                     <div className="d-flex flex-row align-items-center mb-4">
                     <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div className="form-outline flex-fill mb-0">

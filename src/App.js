@@ -14,19 +14,19 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Receiver/>} />
+          <Route exact path="/" element={<Receiver />} />
         </Routes>
         <Routes>
-          <Route exact path="/Receiver" element={<Receiver/>} />
+          <Route exact path="/Receiver" element={<Receiver />} />
         </Routes>
         <Routes>
-          <Route exact path="/Doner" element={<Doner/>} />
+          <Route exact path="/Doner" element={<Doner />} />
         </Routes>
         <Routes>
-          <Route exact path="/SignUp" element={<SignUp/>} />
+          <Route exact path="/SignUp" element={<SignUp />} />
         </Routes>
         <Routes>
-          <Route exact path="/SignIn" element={<SignIn/>} />
+          <Route exact path="/SignIn" element={<SignIn />} />
         </Routes>
       </Router>
 

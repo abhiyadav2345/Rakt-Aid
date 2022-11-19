@@ -8,14 +8,16 @@ import Doner from "./components/Doner";
 import Receiver from "./components/Receiver";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+
         <Routes>
-          <Route exact path="/" element={<Receiver />} />
+          <Route exact path="/" element={<SignIn />} />
         </Routes>
         <Routes>
           <Route exact path="/Receiver" element={<Receiver />} />
@@ -29,6 +31,7 @@ function App() {
         <Routes>
           <Route exact path="/SignIn" element={<SignIn />} />
         </Routes>
+
         <Footer />
       </Router>
 

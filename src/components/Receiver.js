@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+
+
 export default function Receiver() {
 
   const [data, setData] = useState({
@@ -273,3 +275,5 @@ export default function Receiver() {
     </>
   );
 }
+
+export var data;

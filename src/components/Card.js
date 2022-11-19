@@ -3,7 +3,7 @@ import React from "react";
 export default function Card(props) {
   return (
     <>
-      <div className="card border-card-block col-sm-3 mb-3 shadow p-3 mb-5 bg-white rounded">
+      <div className="card border-card-block mb-3 shadow p-3 mb-5 bg-white rounded">
         <div className="card-header">
           {" "}
           <b>Blood Group: {props.bGroup}</b>

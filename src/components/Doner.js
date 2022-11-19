@@ -119,13 +119,13 @@ export default function Doner() {
                         <div className="d-flex flex-row align-items-center mb-4">
                           <i className="fas fa-key fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
-                            <div class="form-outline mb-4 ">
+                            <div className="form-outline mb-4 ">
                               <textarea
-                                class="form-control"
+                                className="form-control"
                                 id="form6Example7"
                                 rows="4"
                               ></textarea>
-                              <label class="form-label" for="form6Example7">
+                              <label className="form-label" for="form6Example7">
                                 Additional information
                               </label>
                             </div>

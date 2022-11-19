@@ -11,7 +11,7 @@ export default function Card(props) {
         <div className="card-body">
           <h5 className="card-title card-primary">Name: {props.name}</h5>
           <p className="card-text">
-            <b>Contact details: <br />M-{props.contect} <br />E-mail {props.emil}</b>
+            <b>Contact details: <br />M-{props.contect} <br />E-mail {props.email}</b>
             <br />
           </p>
           <p className="card-text">

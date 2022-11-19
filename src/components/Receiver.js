@@ -3,13 +3,13 @@ import React, { useState } from "react";
 export default function Receiver() {
 
   const [data, setData] = useState({
-    Fname: "name",
+    Fname: "",
     Lname: "",
-    Email: "email",
-    Contect: "contect",
-    Blood: "blood",
-    Address: "address",
-    AditionalInformation: "addition"
+    Email: "",
+    Contect: "",
+    Blood: "",
+    Address: "",
+    AditionalInformation: ""
   });
 
   console.log(data.Fname)
@@ -114,7 +114,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example1c"
                             >
-                              First Name {data.Fname}
+                              First Name
                             </label>
                           </div>
 
@@ -131,7 +131,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example1c"
                             >
-                              Last Name {data.Lname}
+                              Last Name
                             </label>
                           </div>
                         </div>
@@ -150,7 +150,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Your Email {data.Email}
+                              Your Email
                             </label>
                           </div>
                         </div>
@@ -169,7 +169,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Contact Number {data.Contect}
+                              Contact Number
                             </label>
                           </div>
                         </div>
@@ -188,7 +188,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Blood group you need {data.Blood}
+                              Blood group you need
                             </label>
                           </div>
                         </div>
@@ -207,7 +207,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Address {data.Address}
+                              Address 
                             </label>
                           </div>
                         </div>
@@ -224,7 +224,7 @@ export default function Receiver() {
                                 rows="4"
                               ></textarea>
                               <label className="form-label" for="form6Example7">
-                                Additional information {data.AditionalInformation}
+                                Additional information
                               </label>
                             </div>
                           </div>
@@ -241,7 +241,7 @@ export default function Receiver() {
                             className="form-check-label"
                             htmlFor="form2Example3"
                           >
-                            I agree all statements in{" "}
+                            I agree all statements in
                             <a href="#!">Terms of service</a>
                           </label>
                         </div>

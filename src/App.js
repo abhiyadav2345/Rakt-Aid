@@ -4,11 +4,12 @@ import Cards from "./components/Card";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import React from "react";
-import Doner from "./components/Doner";
+import Donor from "./components/Donor";
 import Receiver from "./components/Receiver";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+
 
 function App() {
   return (
@@ -23,14 +24,9 @@ function App() {
           <Route exact path="/Receiver" element={<Receiver />} />
         </Routes>
         <Routes>
-          <Route exact path="/Doner" element={<Doner />} />
+          <Route exact path="/Donor" element={<Donor />} />
         </Routes>
-        <Routes>
-          <Route exact path="/SignUp" element={<SignUp />} />
-        </Routes>
-        <Routes>
-          <Route exact path="/SignIn" element={<SignIn />} />
-        </Routes>
+        <Cards />
 
         <Footer />
       </Router>

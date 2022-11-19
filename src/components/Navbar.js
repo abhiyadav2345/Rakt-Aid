@@ -37,16 +37,6 @@ export default function Navbar() {
                   Doner
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/SignUp">
-                  SignUp
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/SignIn">
-                  SignIn
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

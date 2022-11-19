@@ -13,7 +13,8 @@ export default function SignIn() {
                 alt="Sample"
               />
             </div>
-            <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+
+            <div className=" mt-5 col-md-8 col-lg-6 col-xl-4 offset-xl-1 shadow p-3 mb-5 bg-white rounded">
               <form>
                 {/*  Email input  */}
                 <div className="form-outline mb-4">
@@ -62,6 +63,18 @@ export default function SignIn() {
                     style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem" }}
                   >
                     Login
+                  </button>
+
+                  <button
+                    type="button"
+                    className="btn bborder border-primary btn-lg"
+                    style={{
+                      paddingLeft: "2.5rem",
+                      paddingRight: "2.5rem",
+                      marginLeft: "2.5rem",
+                    }}
+                  >
+                    Sign Up
                   </button>
                   <p className="small fw-bold mt-2 pt-1 mb-0">
                     Don't have an account?{" "}

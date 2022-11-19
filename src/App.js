@@ -7,6 +7,7 @@ import React from "react";
 import Doner from "./components/Doner";
 import Receiver from "./components/Receiver";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route exact path="/SignIn" element={<SignIn />} />
         </Routes>
+        <Footer />
       </Router>
 
       {/* <Navbar />

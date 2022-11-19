@@ -249,7 +249,7 @@ export default function Receiver() {
                         <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <button
                             type="button"
-                            className="btn btn-succes btn-lg"
+                            className="btn btn-success btn-lg"
                           >
                             Appeal For your need
                           </button>

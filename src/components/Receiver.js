@@ -1,6 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Receiver() {
+
+  const [data, setData] = useState({
+    Fname: "name",
+    Lname: "",
+    Email: "email",
+    Contect: "contect",
+    Blood: "blood",
+    Address: "address",
+    AditionalInformation: "addition"
+  });
+
+  console.log(data.Fname)
+
+  const handleFname = (event) =>{
+    const Fname = event.target.value;
+    setData(prevData => {
+      return {
+        ...prevData,
+        Fname: Fname
+      }
+    })
+
+  }
+  const handleLname = (event) =>{
+
+    const Lname = event.target.value;
+    setData(prevData => {
+      return {
+        ...prevData,
+        Lname: Lname
+      }
+    })
+
+  }
+  const handleEmail = (event) =>{
+    const Email = event.target.value;
+    setData(prevData => {
+      return {
+        ...prevData,
+        Email: Email
+      }
+    })
+
+  }
+  const handleContact = (event) =>{
+    const Contact = event.target.value;
+    setData(prevData => {
+      return {
+        ...prevData,
+        Contect: Contact
+      }
+    })
+
+  }
+  const handleBlood = (event) =>{
+    const Blood = event.target.value;
+    setData(prevData => {
+      return {
+        ...prevData,
+        Blood: Blood
+      }
+    })
+  }
+  const handleAddress = (event) =>{
+    const Address = event.target.value;
+    setData(prevData => {
+      return {
+        ...prevData,
+        Address: Address
+      }
+    })
+  }
+  const handleAdditionalInfo = (event) =>{
+    const AdditionalInfo = event.target.value;
+    setData(prevData => {
+      return {
+        ...prevData,
+        AditionalInformation: AdditionalInfo
+      }
+    })
+  }
+
+
+
   return (
     <>
       <section className="vh-100" style={{ backgroundColor: "#eee" }}>
@@ -20,6 +104,8 @@ export default function Receiver() {
                           <i className="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
                             <input
+                            onChange={handleFname}
+                            value={data.Fname}
                               type="text"
                               id="form3Example1c"
                               className="form-control"
@@ -28,13 +114,15 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example1c"
                             >
-                              First Name
+                              First Name {data.Fname}
                             </label>
                           </div>
 
                           <i className="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
                             <input
+                              onChange={handleLname}
+                              value={data.Lname}
                               type="text"
                               id="form3Example1c"
                               className="form-control"
@@ -43,7 +131,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example1c"
                             >
-                              Last Name
+                              Last Name {data.Lname}
                             </label>
                           </div>
                         </div>
@@ -52,6 +140,8 @@ export default function Receiver() {
                           <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
                             <input
+                              onChange={handleEmail}
+                              value={data.Email}
                               type="email"
                               id="form3Example3c"
                               className="form-control"
@@ -60,7 +150,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Your Email
+                              Your Email {data.Email}
                             </label>
                           </div>
                         </div>
@@ -69,6 +159,8 @@ export default function Receiver() {
                           <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
                             <input
+                            onChange={handleContact}
+                             value={data.Contect}
                               type="email"
                               id="form3Example3c"
                               className="form-control"
@@ -77,7 +169,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Contact Number{" "}
+                              Contact Number {data.Contect}
                             </label>
                           </div>
                         </div>
@@ -86,6 +178,8 @@ export default function Receiver() {
                           <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
                             <input
+                              onChange={handleBlood}
+                              value={data.Blood}
                               type="email"
                               id="form3Example3c"
                               className="form-control"
@@ -94,7 +188,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Blood group you need{" "}
+                              Blood group you need {data.Blood}
                             </label>
                           </div>
                         </div>
@@ -103,6 +197,8 @@ export default function Receiver() {
                           <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
                             <input
+                              onChange={handleAddress}
+                              value={data.Address}
                               type="email"
                               id="form3Example3c"
                               className="form-control"
@@ -111,7 +207,7 @@ export default function Receiver() {
                               className="form-label"
                               htmlFor="form3Example3c"
                             >
-                              Address{" "}
+                              Address {data.Address}
                             </label>
                           </div>
                         </div>
@@ -119,14 +215,16 @@ export default function Receiver() {
                         <div className="d-flex flex-row align-items-center mb-4">
                           <i className="fas fa-key fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
-                            <div class="form-outline mb-4 ">
+                            <div className="form-outline mb-4 ">
                               <textarea
-                                class="form-control"
+                                onChange={handleAdditionalInfo}
+                                value={data.AditionalInformation}
+                                className="form-control"
                                 id="form6Example7"
                                 rows="4"
                               ></textarea>
-                              <label class="form-label" for="form6Example7">
-                                Additional information
+                              <label className="form-label" for="form6Example7">
+                                Additional information {data.AditionalInformation}
                               </label>
                             </div>
                           </div>

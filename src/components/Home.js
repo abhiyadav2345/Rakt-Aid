@@ -1,11 +1,14 @@
 import React from "react";
+import Cards from "./Card"
 import css from "./Home.css";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
-      <section class="hero-banner bg-light py-5">
+    
+      <Cards bGroup="A+" name="atishay" email="atishay@1950" contect="8433244675" address="abhishek"/>
+      {/* <section class="hero-banner bg-light py-5">
         <div class="container">
           <div class="row row align-items-center">
             <div class="col-lg-5 offset-lg-1 order-lg-1">
@@ -29,7 +32,10 @@ export default function Home() {
           </div>
         </div>
             
-      </section>
+      </section> */}
+
+
+
     </>
   );
 }

@@ -1,14 +1,12 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Cards from "./components/Card";
-import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import React from "react";
 import Donor from "./components/Donor";
 import Receiver from "./components/Receiver";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+import Home from "./components/Home"
 
 
 function App() {
@@ -26,7 +24,9 @@ function App() {
         <Routes>
           <Route exact path="/Donor" element={<Donor />} />
         </Routes>
-        <Cards />
+        <Routes>
+          <Route exact path="/Home" element={<Home />} />
+        </Routes>
 
         <Footer />
       </Router>
